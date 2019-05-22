@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ЮНС</title>
+    <script type="text/javascript" src="dist/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="#">О компании</a>
+      <a href="#">Услуги</a>
+      <a href="#">Дли клиентов</a>
+      <a href="#">Контакты</a>
+      <a href="/account">Личный кабинет</a>
+    </div>
+    <div id="main">
+      <header class="header-full">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg row">
+            <div class="navbar__toggle col-sm-1 col-2">
+              <button type="button" name="button" class="navbar__toggle-button">☰</button>
+            </div>
+            <div class="col-lg-3 col-md-7 col-sm-6 col-10">
+              <a href="/" class="navbar__logo">
+                <img src="svg/logo.svg" class="navbar__logo-svg" alt="">
+              </a>
+            </div>
+            <ul class="col-xl-6 col-lg-7 navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link">
+                  Услуги
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="#">Торговля</a></li>
+                    <li class="sub-menu-item"><a href="/delivery">Доставка</a></li>
+                    <li class="sub-menu-item"><a href="#">Хранение</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Дли клиентов</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link account" href="#account">Личный кабинет</a>
+              </li>
+            </ul>
+            <div class="col-lg-2 col-sm-4 col-12 text-sm-left text-center">
+              <a href="tel:89884564455" class="navbar__phone">
+                8 988 456 44 55
+              </a>
+            </div>
+            <div class="col-sm-1 navbar__callback">
+              <div class="toggle_block">
+                <a href="#callback" class="toggle_btn popup">
+                  <img src="svg/call.svg" class="icon-btn">
+                  <span>Перезвонить</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="lines-background">
+        <div class="container delivery">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Доставка</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-12">
+              <p class="main-title">Доставка</p>
+            </div>
+            <div class="col-12">
+              <p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. </p>
+              <p>Разнообразный и богатый опыт укрепление и развитие структуры требуют от нас анализа существенных финансовых и административных условий. Идейные соображения высшего порядка, а также рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! начало повседневной</p>
+            </div>
+            <div class="col-12">
+              <div class="calc">
+                <p class="calc__title">Расчитать стоимость калькулятор доставки</p>
+                <div class="calc__select">
+                  <select class="selectpicker calc__fuel" name="" title="Выберите топливо" data-width="100%">
+                    <option value="20.27">Бензин</option>
+                    <option value="40.90">Дизель</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div id="calc__range" class="calc__range"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="calc__box">
+                      <input type="text" name="" value="10000" class="calc__liter-count calc__input">
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <select class="selectpicker" name="" data-live-search="true" title="Выберите город для доставки" data-width="100%">
+                    <option value="">Москва</option>
+                    <option value="">Краснодар</option>
+                  </select>
+                </div>
+                <hr class="calc__hr">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <p class="calc__total-text">Итого:</p>
+                    <p class="calc__total"><span class="calc__total-price">0</span> р</p>
+                    <p class="calc__total-liter">Цена за литр - <span class="calc__total-liter-price">0</span> /л</p>
+                  </div>
+                  <div class="col-lg-8 calc__callback">
+                    <p class="calc__callback-title">Сделать заказ прямо сейчас</p>
+                      <form class="row calc__callback-form" action="index.html" method="post">
+                        <div class="col-lg-4">
+                          <input type="text" name="" value="" class="calc__callback-input" placeholder="Ваше имя">
+                        </div>
+                        <div class="col-lg-4">
+                          <input type="text" name="" id="phone-number2" value="" class="calc__callback-input" placeholder="Ваш телефон">
+                        </div>
+                        <div class="col-lg-4">
+                          <button type="submit" name="button" class="calc__callback-button">заказать</button>
+                        </div>
+                      </form>
+                    <p class="calc__callback-text">* Нажимая на кнопку «ЗАКАЗАТЬ», вы соглашаетесь с политикой конфидициальности</p>
+                    <p class="calc__callback-text">** Информация на сайте несет справочный характер</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="empty-block"></div>
+      <div class="container">
+        <h2 class="calc__title">Наш транспорт</h2>
+        <div class="autos__delivery owl-carousel owl-theme">
+          <div class="autos__block"><img src="images/slider-1.png" alt="" class="autos__auto-image"><p class="autos__auto-name">АТЗ (топливозаправщик)</p></div>
+          <div class="autos__block"><img src="images/slider-1.png" alt="" class="autos__auto-image"><p class="autos__auto-name">АТЗ (топливозаправщик)</p></div>
+          <div class="autos__block"><img src="images/slider-1.png" alt="" class="autos__auto-image"><p class="autos__auto-name">АТЗ (топливозаправщик)</p></div>
+          <div class="autos__block"><img src="images/slider-1.png" alt="" class="autos__auto-image"><p class="autos__auto-name">АТЗ (топливозаправщик)</p></div>
+          <div class="autos__block"><img src="images/slider-1.png" alt="" class="autos__auto-image"><p class="autos__auto-name">АТЗ (топливозаправщик)</p></div>
+          <div class="autos__block"><img src="images/slider-1.png" alt="" class="autos__auto-image"><p class="autos__auto-name">АТЗ (топливозаправщик)</p></div>
+          <div class="autos__block"><img src="images/slider-1.png" alt="" class="autos__auto-image"><p class="autos__auto-name">АТЗ (топливозаправщик)</p></div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <nav class="row justify-content-center">
+            <div class="col-md-3 col-5">
+              <img src="images/logo-white.png" alt="" class="footer__logo">
+            </div>
+            <ul class="col-lg-6 col-md-9 footer__nav-items">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">О компании</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Услуги</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="/contacts">Контакты</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="/account">Личный кабинет</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Хранение</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Доставка</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Торговля</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Горючее</a>
+              </li>
+            </ul>
+            <div class="col-lg-3 text-xl-left text-center mt-lg-0 mt-5">
+              <div class="footer__button-socials">
+                <a class="footer__button popup" href="#callback">Заказать товар</a>
+                <div class="footer__socials">
+                  <a href="#" class="footer__social">
+                    <img src="svg/vk.svg" alt="" class="footer__social-img">
+                  <a href="#" class="footer__social">
+                    <img src="svg/fb.svg" alt="" class="footer__social-img">
+                  </a>
+                  <a href="#" class="footer__social">
+                    <img src="svg/insta.svg" alt="" class="footer__social-img">
+                  </a>
+                </div>
+              </div>
+              <div class="footer__contacts">
+                <a href="tel:89884564455" class="footer__contacts-link footer__contacts-phone">8 988 456 44 55</a>
+                <a href="mailto:YNS-OIL@mail.ru" class="footer__contacts-link">YNS-OIL@mail.ru</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </footer>
+      <div class="underfooter">
+        <div class="container">
+          <div class="row">
+            <p class="col-sm-3 underfooter__text">© 2017-2018  Югнефтесервис «ЮНС»</p>
+            <p class="col-sm-2 underfooter__text">Все права защищены.</p>
+            <a href="#" class="col-sm-3 underfooter__link">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="account" class="white-popup mfp-hide">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Логин</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Пароль</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Вход</button>
+      </form>
+    </div>
+    <div id="callback" class="white-popup mfp-hide">
+      <form>
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="text" class="form-control" id="phone-number" aria-describedby="phone" placeholder="_(___)___-__-__" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Перезвонить</button>
+      </form>
+    </div>
+  </body>
+</html>

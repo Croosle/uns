@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/OpenSans-Light.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/OpenSans-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('fonts/OpenSans-SemiBold.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('fonts/OpenSans-Bold.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('fonts/OpenSans-ExtraBold.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Serif'), local('PT_Serif-Web-Regular'), url('fonts/PT_Serif-Web-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'PT Serif Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Serif Bold'), local('PT_Serif-Web-Bold'), url('fonts/PT_Serif-Web-Bold.ttf') format('woff2');
+}

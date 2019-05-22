@@ -1,0 +1,155 @@
+.about-company__slider .slick-arrow {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background: #0076af;
+  color: white;
+
+  &.slick-next {
+    right: 0;
+    padding: 10px 10px 10px 14px;
+  }
+
+  &.slick-prev {
+   right: 80px;
+   bottom: -50px;
+   padding: 10px 14px 10px 10px;
+  }
+
+  &:hover {
+    background: #046696;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+.passport__documentation {
+  .passport__documentation-item {
+    margin: 20px;
+    position: relative;
+    width: auto!important;
+
+    &::after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      top: 0;
+      position: absolute;
+      background-color: #ffffff00;
+      transition: background-color 0.5s;
+      pointer-events: none;
+    }
+
+    &::before {
+      content: '';
+      height: 66px;
+      width: 66px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      background-image: url('svg/zoom-in.svg');
+      opacity: 0;
+      background-size: 100%;
+      transition: opacity 0.5s;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        background-color: #0177af54;
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background: #0076af;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &.slick-next {
+      right: -100px;
+      padding: 10px 10px 10px 14px;
+    }
+
+    &.slick-prev {
+     left: -100px;
+     padding: 10px 14px 10px 10px;
+    }
+
+    &:hover {
+      background: #046696;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .passport__documentation .slick-arrow {
+    &.slick-next {
+      right: -15px;
+    }
+    &.slick-prev {
+      left: -40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .passport__documentation .slick-arrow.slick-prev {
+    left: 0;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .passport__documentation .slick-arrow.slick-next {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .passport__documentation {
+    .slick-slide {
+      text-align: center;
+
+      .passport__documentation-item {
+        &::after {
+          display: none;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .slick-arrow {
+      display: none!important;
+    }
+  }
+}
