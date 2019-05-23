@@ -6,6 +6,7 @@ import noUiSlider from 'nouislider';
 import 'owl.carousel';
 import 'jquery';
 import '@chenfengyuan/datepicker';
+import '@chenfengyuan/datepicker/i18n/datepicker.ru-RU.js';
 import 'magnific-popup';
 import 'bootstrap-select';
 
@@ -70,6 +71,8 @@ $(document).ready(function() {
 
   $('#startDate').datepicker({
     format: 'dd.mm.yy',
+    language: 'ru-RU',
+    autoHide: 'true',
     filter: function(date, view) {
       if($('#endDate').val()) {
         if (new Date($('#endDate').datepicker('getDate')) <= date) {
@@ -81,6 +84,8 @@ $(document).ready(function() {
 
   $('#endDate').datepicker({
     format: 'dd.mm.yy',
+    language: 'ru-RU',
+    autoHide: 'true',
     filter: function(date, view) {
       if($('#startDate').val()) {
         if (new Date($('#startDate').datepicker('getDate')) >= date) {

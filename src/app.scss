@@ -1605,3 +1605,13 @@ input::-webkit-inner-spin-button {
     outline: none!important;
   }
 }
+
+.btn-primary {
+  background-color: #00659b;
+  border-color: #00659b;
+
+  &:hover, &:active, &:focus {
+    background-color: #004063 !important;
+    border-color: #004063 !important;
+  }
+}
